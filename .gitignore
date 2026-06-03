@@ -1,0 +1,21 @@
+# Never commit secrets or personal data into the PUBLIC snapshot
+.env
+.env.*
+*.key
+*.pem
+config/
+env-backups/
+**/gmail-token.json
+**/gmail-credentials.json
+**/credentials*.json
+**/cookies.json
+**/*token*.json
+**/*secret*.json
+**/security_warnings_state*.json
+projects/
+**/*.jsonl
+.claude-trace/
+venv/
+node_modules/
+.DS_Store
+.line-navigator.md
