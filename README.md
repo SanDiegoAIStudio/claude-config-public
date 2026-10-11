@@ -1,17 +1,17 @@
 # claude-config (public)
 
-A sanitized, public snapshot of how I run Claude Code — the **patterns**, not my private brain.
+A sanitized, public snapshot of how I run Claude Code: the **patterns**, not my private brain.
 
 I drive a large Claude Code setup every day: a global `CLAUDE.md`, a routing table of skills,
 on-demand context files, hooks, subagents, and a file-based memory. This repo shares the
-*architecture* of that system so you can build your own — minus my projects, clients, secrets,
+*architecture* of that system so you can build your own, minus my projects, clients, secrets,
 and business specifics.
 
 ## What's here
 
-- **`CLAUDE.md`** — a template of the global operating rules (tool autonomy, git, communication,
+- **`CLAUDE.md`**: a template of the global operating rules (tool autonomy, git, communication,
   capability routing, guardrails, memory). Fill in the `<placeholders>`.
-- **`docs/ARCHITECTURE.md`** — the progressive-disclosure pattern: how skills, context files,
+- **`docs/ARCHITECTURE.md`**: the progressive-disclosure pattern: how skills, context files,
   hooks, and memory fit together so the agent loads only what it needs.
 
 ## What's deliberately NOT here
@@ -25,13 +25,13 @@ dangerous file types so nothing sensitive can land here by accident.
 
 1. Copy `CLAUDE.md` to your `~/.claude/CLAUDE.md` and replace every `<placeholder>`.
 2. Read `docs/ARCHITECTURE.md` and adopt the pieces that fit how you work.
-3. Build your own skills/context/hooks — start small, add only what earns its place.
+3. Build your own skills/context/hooks. Start small, add only what earns its place.
 
 ## A note on safety (learned the hard way)
 
 If you publish your own config, scan it first. The classic leaks: committed `.env` files,
 OAuth `token.json`, scraper cookies, and "backups" of real env files. And remember: your
-*traces* (session recordings) can contain secrets that scrolled through tool output — scrub
+*traces* (session recordings) can contain secrets that scrolled through tool output, so scrub
 those separately before sharing any of them.
 
 MIT licensed. Take what's useful.

@@ -4,7 +4,7 @@ Global preferences live in `~/.claude/CLAUDE.md`. This file defines project-spec
 
 ## Project Context
 
-A sanitized, public snapshot of how I run Claude Code — the **patterns**, not my private brain. I drive a large Claude Code setup every day: a global `CLAUDE.md`, a routing table of skills, on-demand context files, hooks, subagents, and a file-based memory. This repo shares the *architecture* of that system so you can build your own — minus my projects, clients, secrets, and business specifics.
+A sanitized, public snapshot of how I run Claude Code: the **patterns**, not my private brain. I drive a large Claude Code setup every day: a global `CLAUDE.md`, a routing table of skills, on-demand context files, hooks, subagents, and a file-based memory. This repo shares the *architecture* of that system so you can build your own, minus my projects, clients, secrets, and business specifics.
 
 - Inspect these directories first: `docs/`.
 
