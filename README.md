@@ -35,3 +35,15 @@ OAuth `token.json`, scraper cookies, and "backups" of real env files. And rememb
 those separately before sharing any of them.
 
 MIT licensed. Take what's useful.
+
+## The story (then and now)
+
+**Then.** My first Claude Code session on record, May 8, 2025, lasted 53 seconds. I didn't come back for real until November 8. From then to December 11 I ran 146 sessions on 28 days: 104,228 messages and 31,847 tool calls.
+
+I kept retyping the same instructions, so they turned into slash commands. On November 14 I asked for a new one called ss: "this will be save state." It still runs in my setup, as /sv.
+
+On November 20 I pasted Anthropic's Claude Code best-practices post and asked for "a round of assesment and fine tuning planning." The audit was blunt. My CLAUDE.md had grown to 291 lines and was "monolithic (all context loaded upfront)", sitting next to 29 slash commands with no namespacing. At 16:25 the whole ~/.claude folder went into git. At 17:06 I fed it more Anthropic engineering posts plus the anthropics/skills repo. By 17:28 a commit titled "Progressive Disclosure, Tool Namespacing, Orchestrators" was in. On Claude Code 2.0.47 and Sonnet 4.5, that meant hand-building conventions out of blog posts, one session at a time.
+
+**Now.** That repo has 724 commits and stays private, because it's wired to my own projects and accounts. This Mac holds 7,716 session log files since September 16. The part that transfers is the gift: claude-config-public, a 133-line rules file in 10 sections (non-negotiables, git, communication, capability routing, context files, subagent routing, guardrails, output markers, memory, workflow) with 5 placeholders. It went public in June 2026, and the October pass made the wording plain.
+
+State: the pattern runs in every session I start. The template is a snapshot and doesn't include my hooks. Copy it to ~/.claude/CLAUDE.md and fill the 5 blanks.
